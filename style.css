@@ -1,0 +1,45 @@
+* {
+box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    max-width: 1200px;
+    padding: 1em;
+    margin:0 auto;
+}
+h1{
+ font-size: 1.5em;
+}
+
+.bayan {
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+}
+li{
+    list-style-type: none;
+    }
+    li input, .item__content{
+        display:  none;
+    } /*  or max-width: 0;*/
+.bayan__item {
+    background-color: beige;
+    border-radius: 0.3rem;
+    margin-bottom: 10px;
+}
+.item__input{
+    padding: 1em;
+   
+}
+.item__title {
+    display: flex;
+}
+.item__content {
+    padding: 10px 15px;
+}
+.mem {
+    width: 200px;
+
+}
