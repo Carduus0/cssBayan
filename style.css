@@ -70,6 +70,9 @@ display: none;
     .bayan__item :checked + .item__title::after{
         content: "x";
     }
-    .bayan__item :checked ~ .item__content{
+    .bayan__item :checked~ .item__content{
+        display: block;
+    }
+    .bayan__item :hover~ .item__content{/*checked*/
         display: block;
     }
