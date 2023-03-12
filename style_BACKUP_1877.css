@@ -1,0 +1,130 @@
+* {
+box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+img {
+    max-width: 100%;
+  
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0 auto;
+   
+}
+.bayan{
+    background-color: #f3f3eb;
+ box-shadow: 0 0 1em 0.2em rgba(255, 228, 196, 0.5);
+ max-width: 100vw;
+}
+
+ 
+
+h1{
+ font-size: 1.5em;
+
+ padding-left: 2em;
+}
+.bayan__item input,
+.item__content{
+display: none;
+/* width: 0; */
+}
+
+.bayan__item {
+    background-color: #f3f3eb;
+    margin-bottom: 1 em;
+    border-top: 0.05em solid gray;
+    cursor: pointer;
+}
+
+
+.input{
+    padding: 1em;
+   
+}
+.item__title {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    color: #0059d9;
+    position: relative;
+    cursor: pointer;
+}
+.item__title:hover{
+    color: black;
+}
+.item__title::after{
+    content: "▼";
+}
+.item__content{
+    width: 50vw;
+}
+
+.bayan__item :checked + .item__title{
+    color: black;
+    }
+    .bayan__item :checked + .item__title::after{
+        content: "x";
+    }
+    .bayan__item :checked~ .item__content{
+<<<<<<< HEAD
+=======
+        display: block;
+    }
+    .bayan__item :hover~ .item__content{/*checked*/
+>>>>>>> e721b2ef96f5acb3dbb52940b43db481c543c39d
+        display: block;
+        /* width: 30%;
+        transition: all 0.3s linear;
+     */
+    }
+    
+    .bayan__item :hover + .item__content{
+       display: block;
+       /* width: 30%;
+       transition: width 0.3s linear; */
+      
+    }
+   
+    
+    /*mobile 320x568, tablet 820x1180, desktop 1920×1080*/
+    @media only screen
+  and (min-width: 320px){
+    .item__title {
+        font-size: 1em;
+     }
+     h1{
+        font-size: 1.2em;
+     }
+  }
+  @media only screen
+  and (min-width: 820px){
+    .item__title {
+        padding: 1.5em;
+        font-size: 1.2em;
+     }
+     h1{
+        font-size: 1.5em;
+     }
+     
+
+  }
+  @media only screen
+  and (min-width: 1920px){
+    .bayan:hover{
+        color: black;
+     }
+     .item__title {
+        font-size: 1.5em;
+     }
+     h1{
+        font-size: 2em;
+     }
+     
+
+  }

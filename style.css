@@ -1,0 +1,129 @@
+* {
+box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0 auto;
+   
+}
+.bayan{
+    background-color: #f3f3eb;
+ box-shadow: 0 0 1em 0.2em rgba(255, 228, 196, 0.5);
+ max-width: 100vw;
+}
+
+ul>li{
+    list-style-type: none;
+}
+
+h1{
+ font-size: 1.5em;
+ padding-left: 2em;
+}
+.bayan__item input{
+display: none;
+
+}
+
+.bayan__item {
+    background-color: #f3f3eb;
+    margin-bottom: 1 em;
+    border-top: 0.05em solid gray;
+    cursor: pointer;
+}
+
+
+.input{
+    padding: 1em;
+   
+}
+.item__content {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    color: #0059d9;
+    cursor: pointer;
+}
+span{
+    display: inline-block;
+    opacity: 0;
+}
+.input:checked+ .item__title span{
+    opacity: 1;
+    transform: rotate(180deg);
+    transition: all 0.3s;
+}
+
+.item__title>img{
+    max-height: 0;
+    transition: all 0.3s;
+}
+.item__content{
+    width: 50vw;
+}
+
+.bayan__item :checked+ .item__title p,
+.bayan__item :checked+ .item__title span{
+    color: black;
+    }
+   
+    .bayan__item :checked+ .item__title>img{
+        max-height: 15em;
+        display: block;
+    }
+
+    
+    /*mobile 320x568, tablet 820x1180, desktop 1920×1080*/
+    @media only screen
+  and (min-width: 320px){
+    .item__title {
+        font-size: 1em;
+     }
+     h1{
+        font-size: 1.2em;
+     }
+  }
+  @media only screen
+  and (min-width: 820px){
+    .item__title {
+        padding: 1.5em;
+        font-size: 1.2em;
+     }
+     h1{
+        font-size: 1.5em;
+     }
+     
+
+  }
+  @media only screen
+  and (min-width: 1220px) and (max-width: 1920px){
+    .bayan:hover{
+        color: black;
+     }
+      .bayan__item :hover .mem{
+        max-height: 15em;
+        display: block;
+        transition: all 0.5s ease;
+     
+    } 
+     .item__title {
+        font-size: 1.5em;
+     }
+     .item__title:hover{
+        color: black;
+    }
+     h1{
+        font-size: 2em;
+     }
+     .bayan__items:hover .item__title span{
+        opacity: 1;
+     }
+     
+
+  }
