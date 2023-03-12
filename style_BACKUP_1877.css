@@ -72,9 +72,12 @@ display: none;
         content: "x";
     }
     .bayan__item :checked~ .item__content{
+<<<<<<< HEAD
+=======
         display: block;
     }
     .bayan__item :hover~ .item__content{/*checked*/
+>>>>>>> e721b2ef96f5acb3dbb52940b43db481c543c39d
         display: block;
         /* width: 30%;
         transition: all 0.3s linear;

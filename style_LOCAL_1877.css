@@ -73,9 +73,6 @@ display: none;
     }
     .bayan__item :checked~ .item__content{
         display: block;
-    }
-    .bayan__item :hover~ .item__content{/*checked*/
-        display: block;
         /* width: 30%;
         transition: all 0.3s linear;
      */
