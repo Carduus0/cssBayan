@@ -55,9 +55,7 @@ display: none;
     position: relative;
     cursor: pointer;
 }
-.item__title:hover{
-    color: black;
-}
+
 .item__title::after{
     content: "▼";
 }
@@ -74,19 +72,9 @@ display: none;
     .bayan__item :checked~ .item__content{
         display: block;
     }
-    .bayan__item :hover~ .item__content{/*checked*/
-        display: block;
-        /* width: 30%;
-        transition: all 0.3s linear;
-     */
-    }
+   
     
-    .bayan__item :hover + .item__content{
-       display: block;
-       /* width: 30%;
-       transition: width 0.3s linear; */
-      
-    }
+    
    
     
     /*mobile 320x568, tablet 820x1180, desktop 1920×1080*/
@@ -116,9 +104,16 @@ display: none;
     .bayan:hover{
         color: black;
      }
+     .bayan__item :hover~ .item__content{
+        display: block;
+     
+    }
      .item__title {
         font-size: 1.5em;
      }
+     .item__title:hover{
+        color: black;
+    }
      h1{
         font-size: 2em;
      }
